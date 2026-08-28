@@ -340,7 +340,7 @@ border-radius:4px;
 font-family:var(--mono);
 font-size:13px;
 }
-.role-banner .role-title{color:var(--text-primary); font-weight:600; font-size:14px;}
+.role-banner .company-name{color:var(--text-primary); font-weight:600; font-size:14px;}
 .role-banner .role-meta{color:var(--text-tertiary);}
 
 .sld{
