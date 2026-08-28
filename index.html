@@ -1,86 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Subha Prasan Dash</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subha Prasan Dash — SCADA & RTU Commissioning Engineer</title>
+<meta name="description" content="Portfolio of Subha Prasan Dash — Industrial Automation Project Engineer specializing in SCADA, RTU commissioning and substation automation.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230A0F1A%22/><path d=%22M20 55 L38 55 L45 38 L55 68 L62 45 L80 45%22 stroke=%22%23FFB627%22 stroke-width=%226%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="images/profile_photo.jpg" alt="Subha Prasan Dash" class="profile-photo" />
-      <h1>Subha Prasan Dash</h1>
-      <p>SCADA Engineer | RTU Commissioning | Industrial Automation</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="theme-controls">
-        <button id="theme-toggle">🌙 Dark</button>
-        <button class="color-btn" data-color="#0077b5">🔵</button>
-        <button class="color-btn" data-color="#e63946">🔴</button>
-        <button class="color-btn" data-color="#2a9d8f">🟢</button>
-        <button class="color-btn" data-color="#ff9900">🟠</button>
+
+<header class="statusbar">
+  <div class="statusbar-inner">
+    <div class="status-left">
+      <span class="status-dot"></span>
+      <span class="status-name">S. P. DASH</span>
+      <span>// SYSTEM ONLINE</span>
+    </div>
+    <nav class="statusnav" id="statusnav">
+      <a href="#overview">Overview</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Industrial Automation Project Engineer</div>
+    <div class="hero-grid">
+      <div>
+        <h1 class="name">SUBHA PRASAN<br><span class="last">DASH</span></h1>
+        <div class="role-line">SCADA<span class="sep">/</span>RTU COMMISSIONING<span class="sep">/</span>SUBSTATION AUTOMATION</div>
+        <p class="hero-summary">I design, install and commission SCADA systems, RTUs and control networks for power and rail infrastructure — carrying projects from single-line diagram through FAT, SAT and final handover.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:sipundash.1997@gmail.com">Email Me →</a>
+          <a class="btn btn-ghost" href="tel:+919178718297">Call +91 91787 18297</a>
+          <a class="btn btn-ghost" href="#" id="linkedinLink" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <svg class="ring" viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="97" stroke="#1D2A3E" stroke-width="1"/>
+          <circle cx="100" cy="100" r="97" stroke="#FFB627" stroke-width="1.6" stroke-dasharray="4 14" stroke-linecap="round"/>
+        </svg>
+        <img src="assets/Subha.png" alt="Portrait of Subha Prasan Dash">
+        <div class="photo-tag">● ON-SITE, BHUBANESWAR</div>
       </div>
     </div>
-  </header>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        An Industrial Automation Project Engineer designs, implements, and manages
-advanced automation systems to improve manufacturing and operational efficiency.
-Supervise the installation, testing, and commissioning of SCADA systems, RTUs, and
-control systems, ensuring seamless integration, reliability, and optimal performance.
+    <div class="nameplate reveal">
+      <div class="cell">
+        <div class="label">Experience</div>
+        <div class="val amber">6+ Years</div>
+      </div>
+      <div class="cell">
+        <div class="label">RTUs Commissioned</div>
+        <div class="val">55+</div>
+      </div>
+      <div class="cell">
+        <div class="label">Protocols</div>
+        <div class="val">IEC 61850 / DNP3</div>
+      </div>
+      <div class="cell">
+        <div class="label">Base Location</div>
+        <div class="val">Bhubaneswar, IN</div>
+      </div>
+    </div>
+  </section>
 
-      </p>
-    </section>
+  <section id="overview">
+    <div class="section-head reveal">
+      <span class="section-index">01</span>
+      <h2 class="section-title">Overview</h2>
+      <span class="section-rule"></span>
+    </div>
+    <div class="overview-panel reveal">
+      An <strong>Industrial Automation Project Engineer</strong> who designs, implements and manages advanced automation systems to improve operational efficiency across power and rail infrastructure. Supervises the installation, testing and commissioning of <strong>SCADA systems, RTUs and control systems</strong> end‑to‑end — from single-line diagram design through configuration, integration, factory and site acceptance testing, and final handover documentation — ensuring reliability and optimal performance at every stage.
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Key Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Haridaspur–Paradeep Traction Line</h3>
-          <p>
-            Led erection, commissioning, and testing of the Haridaspur–Paradeep traction line, deploying 8 RTUs and SCADA/EMS servers, conducting FAT & SAT, ensuring compliance with railway standards, and managing a team to deliver fault diagnostics, validation, and project documentation.
-          </p>
-        </div>
-        <div class="project">
-          <h3>GAIL Pipeline SCADA</h3>
-          <p>
-            Installed and configured Synergy RTUs for GAIL’s SCADA automation, conducted testing for reliable operations, and coordinated with engineers for successful deployment and handover.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Tata Power Substations</h3>
-          <p>
-            Executed retrofit of 47 Advantech RTUs with Synergy RTUs across Tata Power substations, conducted P2P and SAT testing, and integrated IEC 61850 protocol for seamless communication with SIEMENS protection relays.
-          </p>
+  <section id="skills">
+    <div class="section-head reveal">
+      <span class="section-index">02</span>
+      <h2 class="section-title">Skills</h2>
+      <span class="section-rule"></span>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-label">Core Competencies</div>
+      <div class="chip-row">
+        <span class="chip core">SCADA</span>
+        <span class="chip core">RTU Commissioning</span>
+        <span class="chip core">Substation Automation</span>
+        <span class="chip core">Relay Integration</span>
+        <span class="chip core">IEC 61850 IED Configuration</span>
+        <span class="chip core">SLD Design</span>
+        <span class="chip core">FAT &amp; SAT</span>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-label">Protocol Expertise</div>
+      <div class="chip-row">
+        <span class="chip">IEC 60870‑5‑101</span>
+        <span class="chip">IEC 60870‑5‑103</span>
+        <span class="chip">IEC 60870‑5‑104</span>
+        <span class="chip">IEC 61850</span>
+        <span class="chip">DNP3</span>
+        <span class="chip">MODBUS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head reveal">
+      <span class="section-index">03</span>
+      <h2 class="section-title">Experience</h2>
+      <span class="section-rule"></span>
+    </div>
+
+    <div class="role-banner reveal">
+      <div><span class="role-title">Senior Project Engineer (on-site)</span></div>
+      <div class="role-meta">BHUBANESWAR, ODISHA &nbsp;·&nbsp; MAR 2020 — PRESENT</div>
+    </div>
+
+    <p class="reveal" style="color:var(--text-tertiary); font-family:var(--mono); font-size:12.5px; margin-bottom:8px; letter-spacing:.04em;">SELECT A NODE TO VIEW CLIENT SCOPE →</p>
+
+    <div class="sld reveal">
+      <div class="sld-line-wrap">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 4">
+          <line class="sld-flow" x1="0" y1="2" x2="100" y2="2" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </div>
+      <div class="sld-nodes">
+        <button class="sld-node active" data-target="railways">
+          <span class="stem"></span>
+          <span class="node-mark"></span>
+          <span class="node-label">Indian Railways<span class="node-sub">Traction SCADA</span></span>
+        </button>
+        <button class="sld-node" data-target="gail">
+          <span class="stem"></span>
+          <span class="node-mark"></span>
+          <span class="node-label">GAIL<span class="node-sub">Pipeline SCADA</span></span>
+        </button>
+        <button class="sld-node" data-target="tata">
+          <span class="stem"></span>
+          <span class="node-mark"></span>
+          <span class="node-label">TATA Power<span class="node-sub">RTU Retrofit</span></span>
+        </button>
+        <button class="sld-node" data-target="optcl">
+          <span class="stem"></span>
+          <span class="node-mark"></span>
+          <span class="node-label">OPTCL<span class="node-sub">Substation Automation</span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="client-panel active" id="railways">
+      <div class="cp-head">
+        <span class="cp-name">Indian Railways</span>
+        <span class="cp-tag">TRACTION LINE · SCADA-RTU INTEGRATION</span>
+      </div>
+      <ul>
+        <li>Led erection, commissioning and testing of the new traction line from Haridaspur to Paradeep, including SLD design and SCADA‑RTU integration.</li>
+        <li>Deployed and commissioned 8 RTUs, a SCADA master server and an EMS server; oversaw RTU configuration, wiring and SCADA communication.</li>
+        <li>Conducted FAT &amp; SAT, ensured compliance with railway standards, and delivered validation, fault diagnostics and final documentation.</li>
+        <li>Managed a team of 6 engineers and coordinated with contractors, technicians and site staff to ensure smooth execution.</li>
+      </ul>
+    </div>
+
+    <div class="client-panel" id="gail">
+      <div class="cp-head">
+        <span class="cp-name">GAIL</span>
+        <span class="cp-tag">PIPELINE SCADA · DNP3</span>
+      </div>
+      <ul>
+        <li>Installed and commissioned Synergy RTUs across multiple GAIL stations for pipeline SCADA automation.</li>
+        <li>Configured RTUs for I/O mapping, control logic and communication, integrating DNP3 protocol with the SCADA master.</li>
+        <li>Performed P2P and Site Acceptance Testing (SAT), ensuring reliable operation of all signals and control loops.</li>
+        <li>Collaborated with GAIL engineers on configuration finalization, issue resolution and seamless handover support.</li>
+      </ul>
+    </div>
+
+    <div class="client-panel" id="tata">
+      <div class="cp-head">
+        <span class="cp-name">TATA Power</span>
+        <span class="cp-tag">RTU RETROFIT · IEC 61850</span>
+      </div>
+      <ul>
+        <li>Executed a retrofit project replacing 47 legacy Advantech RTUs with Synergy RTUs across Tata Power substations.</li>
+        <li>Performed P2P and Site Acceptance Testing (SAT), ensuring signal integrity and seamless system integration.</li>
+        <li>Integrated the IEC 61850 protocol for reliable communication with SIEMENS numerical relays for protection and control.</li>
+      </ul>
+    </div>
+
+    <div class="client-panel" id="optcl">
+      <div class="cp-head">
+        <span class="cp-name">OPTCL</span>
+        <span class="cp-tag">SUBSTATION AUTOMATION SYSTEM · EHV</span>
+      </div>
+      <ul>
+        <li>Installed and configured Synergy RTUs for the Substation Automation System (SAS) across OPTCL EHV substations.</li>
+        <li>Integrated IEC 61850, Modbus and IEC 104 protocols with relays, meters and the SCADA control center.</li>
+        <li>Performed I/O mapping, logic configuration, P2P &amp; SAT testing, and resolved integration issues for stable SAS operation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="credentials">
+    <div class="section-head reveal">
+      <span class="section-index">04</span>
+      <h2 class="section-title">Credentials</h2>
+      <span class="section-rule"></span>
+    </div>
+
+    <div class="two-col">
+      <div class="reveal">
+        <div class="col-label">Certifications</div>
+        <div class="plate-list">
+          <div class="plate">
+            <div class="plate-top">
+              <span class="plate-title">MCCAPC</span>
+              <span class="plate-year">2019</span>
+            </div>
+            <div class="plate-sub">Central Tool Room &amp; Training Centre, Bhubaneswar, Odisha</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        📞 Phone: <a href="tel:+919178718297">+91- 9178718297</a>
-        <br/>
-        📧 Email: <a href="mailto:sipundash.1997@gmail.com">sipundash.1997@gmail.com</a>
-        <br />
-        🔗 LinkedIn:
-        <a href="https://www.linkedin.com/in/subhaprasan-dash/" target="_blank">
-          linkedin.com/in/subhaprasan-dash
-        </a>
-      </p>
-    </section>
+      <div class="reveal">
+        <div class="col-label">Education</div>
+        <div class="plate-list">
+          <div class="plate">
+            <div class="plate-top">
+              <span class="plate-title">B.Tech, Electrical &amp; Electronics Engineering</span>
+              <span class="plate-year">2019</span>
+            </div>
+            <div class="plate-sub">Biju Patnaik University of Technology, Odisha</div>
+            <div class="plate-score">SCORE — 73%</div>
+          </div>
+          <div class="plate">
+            <div class="plate-top">
+              <span class="plate-title">12th, Science</span>
+              <span class="plate-year">2015</span>
+            </div>
+            <div class="plate-sub">Vedbyash Residential College, Berhampur</div>
+            <div class="plate-score">SCORE — 56%</div>
+          </div>
+          <div class="plate">
+            <div class="plate-top">
+              <span class="plate-title">10th</span>
+              <span class="plate-year">2013</span>
+            </div>
+            <div class="plate-sub">Govt. S.S.D High School, Raighar</div>
+            <div class="plate-score">SCORE — 66.7%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-lead">Let's bring your<br>system <span class="amber">online</span>.</div>
+        <p class="contact-desc">Open to SCADA, RTU commissioning and substation automation projects — on-site or remote support, from design to handover.</p>
+      </div>
+      <div class="reveal">
+        <div class="contact-list">
+          <div class="contact-row"><span class="k">Phone</span><a class="v" href="tel:+919178718297">+91 91787 18297</a></div>
+          <div class="contact-row"><span class="k">Email</span><a class="v" href="mailto:sipundash.1997@gmail.com">sipundash.1997@gmail.com</a></div>
+          <div class="contact-row"><span class="k">Base</span><span class="v">Bhubaneswar, Odisha, IN</span></div>
+          <div class="contact-row"><span class="k">Link</span><a class="v" href="#" id="linkedinLink2" target="_blank" rel="noopener">linkedin.com/in/subha-prasan-dash</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>© 2026 SUBHA PRASAN DASH</span>
+      <span>BUILT FOR GITHUB PAGES</span>
+    </div>
   </div>
+</footer>
 
-  <footer>
-    <p>© 2025 Subha Prasan Dash. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+<script>
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const statusnav = document.getElementById('statusnav');
+  navToggle.addEventListener('click', () => {
+    const open = statusnav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  statusnav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    statusnav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // SLD node switching
+  const nodes = document.querySelectorAll('.sld-node');
+  const panels = document.querySelectorAll('.client-panel');
+  nodes.forEach(node => {
+    node.addEventListener('click', () => {
+      nodes.forEach(n => n.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      node.classList.add('active');
+      document.getElementById(node.dataset.target).classList.add('active');
+    });
+  });
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // NOTE: Update this with the real LinkedIn profile URL
+  const linkedinURL = "https://www.linkedin.com/";
+  document.getElementById('linkedinLink').href = linkedinURL;
+  document.getElementById('linkedinLink2').href = linkedinURL;
+</script>
+
 </body>
 </html>
